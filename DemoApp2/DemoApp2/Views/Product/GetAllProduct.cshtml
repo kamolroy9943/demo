@@ -1,0 +1,24 @@
+﻿ @{
+    ViewBag.Title = "GetAllProduct";
+}
+
+<h2>GetAllProduct</h2>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th> Name</th>
+        <th>quantity</th>
+    </tr>
+    @foreach(var student in Model)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.ProductName</td>
+            <td>@student.ProductPrice</td>
+        </tr>
+    }
+</table>
+
+ 
+
